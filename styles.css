@@ -1317,12 +1317,20 @@ FOOTER
   position: relative;
   z-index: 10;
 }
-.footer__list--div{
-  margin-top: 48px;
+.footer__links{
+  display: flex;
+  justify-content: space-between;
 }
+.footer__list-div{
+  margin-top: 48px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .footer__h5{
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 16px;
 }
 .footer__list{
   margin-top: 1.5rem;
@@ -1330,9 +1338,10 @@ FOOTER
   font-weight: 500;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding-top: 12px;
   display: flex;
   flex-direction: column;
+  
 }
 .footer__list--item{
   margin-top: 0.75rem;
@@ -1346,17 +1355,136 @@ FOOTER
   color: #f7fafc;
   transition: all ease-in-out 300ms;
 }
-.link__hover--effect:after{
-  content: "";
-  position: absolute;
-  height: 3px;
-  background-color: white;
-  width: 0;
-  bottom: -3px;
-  right: 0;
-  transition: all 300ms ease;
+.link__hover--effect {
+  border-bottom: solid;
+    border-bottom-width: 2px;
+    border-color: transparent;
+    padding-bottom: 0.25rem;
+    transition-duration: 300ms;
 }
-.link__hover-effect:hover:after {
+.link__hover--effect:hover, .link__hover--effect:focus {
+ border-color: #f7fafc;
+}
+.footer__line{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgba(116,44,255,var(--tw-border-opacity));
+  border-bottom-style:solid ;
   width: 100%;
   left: 0;
+}
+.footer__socials{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.footer__logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__logo--img{
+  width: 100%;
+  max-width: 2rem;
+  height: auto;
+  display: block;
+  vertical-align: middle;
+}
+.footer__logo--text{
+  margin-left: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  --tw-text-opacity: 1;
+  color: rgba(247,250,252,var(--tw-text-opacity));
+}
+.footer__copyright{
+  text-align: center;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgba(203,213,224,var(--tw-text-opacity));
+}
+.footer__socials--links{
+  display: flex;
+}
+.footer__socials--link1{
+  cursor: pointer;
+  height: 32px;
+  padding: 0.5rem;
+  border-radius: 9999px;
+  background-color: #f7fafc;
+  --tw-text-opacity: 1;
+  color: rgba(26,32,44,var(--tw-text-opacity));
+  transition-duration: 300ms;
+  margin-right: 1rem;
+}
+.footer__socials--link2{
+  cursor: pointer;
+  height: 32px;
+  padding: 0.5rem;
+  border-radius: 9999px;
+  background-color: #f7fafc;
+  --tw-text-opacity: 1;
+  color: rgba(26,32,44,var(--tw-text-opacity));
+  transition-duration: 300ms;
+  margin-right: 1rem;
+}
+
+.footer__socials--link3{
+  cursor: pointer; 
+   height: 32px;
+  padding: 0.5rem;
+  border-radius: 9999px;
+  background-color: #f7fafc;
+  --tw-text-opacity: 1;
+  color: rgba(26,32,44,var(--tw-text-opacity));
+  transition-duration: 300ms;
+}
+.footer__svg{
+  height: 1rem;
+  width: 1rem;
+}
+.blobs{
+  position: absolute;
+    inset: 0px;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+.footer__blob1{
+  --tw-translate-x: -5rem;
+  --tw-translate-y: -8rem;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 20rem;
+  height: 20rem;
+  --tw-text-opacity: 1;
+  color: rgba(80,17,204,var(--tw-text-opacity));
+  opacity: 0.5;
+}
+.footer__blob2{
+  --tw-translate-x: 8rem;
+    --tw-translate-y: 12rem;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 20rem;
+    height: 20rem;
+    --tw-text-opacity: 1;
+    color: rgba(80,17,204,var(--tw-text-opacity));
+    opacity: 0.5;
 }
