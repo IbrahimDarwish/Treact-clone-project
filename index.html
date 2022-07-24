@@ -9,10 +9,16 @@
       UIs - Treact
     </title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js">
+    </script>
+     <script
+     src="https://kit.fontawesome.com/c8e4d183c2.js"
+     crossorigin="anonymous"
+   ></script>
   </head>
   <body>
     <section>
-      <nav>
+      <nav class="left__to--right">
         <div class="nav__container row">
           <div class="logo__wrapper">
             <img src="./assets/logo.2c489fc4.svg" class="logo" alt="logo" />
@@ -44,11 +50,27 @@
               <a href="" class="nav__link--anchor-primary">Sign Up</a>
             </li>
           </ul>
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list"><a href="#" class="menu__link link__hover--effect-1" onclick="closeMenu()">About</a></li>
+            <li class="menu__list"><a href="#" class="menu__link link__hover--effect-1" onclick="closeMenu()">Blog</a></li>
+            <li class="menu__list"><a class="menu__link link__hover--effect-1" onclick="closeMenu()">Pricing</a></li>
+            <li class="menu__list"><a class="menu__link link__hover--effect-1" onclick="closeMenu()">Contact Us</a></li>
+            <li class="menu__list"><a class="menu__link link__hover--effect-1" onclick="closeMenu()">Login</a></li>
+            <li class="menu__list"><a class="menu__link nav__link--anchor-primary" onclick="closeMenu()">Sign Up</a></li>
+          </ul>
+        </div>
         </div>
       </nav>
     </section>
     <section>
-      <header>
+      <header class="left__to--right">
         <div class="row">
           <div class="header__container">
             <div class="header__text">
@@ -70,14 +92,16 @@
                 />
                 <button class="header__button">Get Started</button>
               </form>
-              <div class="header__description--ad-container"></div>
-              <p class="header__description--ad">OUR TRUSTED CUSTOMERS</p>
-              <img
+              <div class="header__description--ad-container">
+
+                <p class="header__description--ad">OUR TRUSTED CUSTOMERS</p>
+                <img
                 src="./assets/customers-logo-strip.680ac7c2.png"
                 class="header__customer-img"
                 alt=""
-              />
-            </div>
+                />
+              </div>
+              </div>
             <div class="header__img--wrapper">
               <img
                 src="./assets/design-illustration-2.6da6a00b.svg"
@@ -90,57 +114,59 @@
       </header>
     </section>
     <main>
-      <section class="sect1">
+      <section class="sect1 right__to--left">
         <div class="sect1__container">
           <div class="row">
-            <span class="text-purple sect1__features--container"
-              ><h5 class="sub__title">features</h5></span
-            >
-            <h2 class="sect1__title">
-              We have Amazing <span class="text-purple">&nbsp;Service.</span>
-            </h2>
-            <div class="sect1__para--container">
-              <p class="sect1__para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                nesciunt esse obcaecati vero voluptatum autem error, ipsum.
-              </p>
+            <div class="sect1__title--container">
+              <span class="text-purple sect1__features--container"
+              ><h5 class="sub__title">features</h5></span>
+              <h2 class="sect1__title">
+                We have Amazing <span class="text-purple">Service.</span>
+              </h2>
             </div>
-            <div class="sect1__features--container">
-              <div class="sect1__service--box">
-                <div class="sect1__img--container">
-                  <img
+            <div class="sect1__text">
+              <div class="sect1__para--container">
+                <p class="sect1__para">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                  nesciunt esse obcaecati vero voluptatum autem error, ipsum.
+                </p>
+              </div>
+              <div class="sect1__features--container">
+                <div class="sect1__service--box">
+                  <div class="sect1__img--container">
+                    <img
                     src="./assets/shield-icon.daefe14b.svg"
                     class="service__img"
                     alt="shield icon"
-                  />
+                    />
+                  </div>
+                  <div class="text__container">
+                    <span class="title">Secure</span>
+                    <p class="description">
+                      We strictly deal with vendors that provide top notch
+                      security.
+                    </p>
+                  </div>
                 </div>
-                <div class="text__container">
-                  <span class="title">Secure</span>
-                  <p class="description">
-                    We strictly deal with vendors that provide top notch
-                    security.
-                  </p>
-                </div>
-              </div>
-              <div class="sect1__service--box">
-                <div class="sect1__img--container">
-                  <img
+                <div class="sect1__service--box">
+                  <div class="sect1__img--container">
+                    <img
                     src="./assets/support-icon.f9253ffa.svg"
                     class="service__img"
                     alt="shield icon"
-                  />
+                    />
+                  </div>
+                  <div class="text__container">
+                    <span class="title">24/7 Support</span>
+                    <p class="description">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Magni, ipsam. Dolorum.
+                    </p>
+                  </div>
                 </div>
-                <div class="text__container">
-                  <span class="title">24/7 Support</span>
-                  <p class="description">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Magni, ipsam. Dolorum.
-                  </p>
-                </div>
-              </div>
-              <div class="sect1__service--box">
-                <div class="sect1__img--container">
-                  <img
+                <div class="sect1__service--box">
+                  <div class="sect1__img--container">
+                    <img
                     src="./assets/customize-icon.367468c9.svg"
                     class="service__img"
                     alt="shield icon"
@@ -157,9 +183,9 @@
               <div class="sect1__service--box">
                 <div class="sect1__img--container">
                   <img
-                    src="./assets/reliable-icon.1367510a.svg"
-                    class="service__img"
-                    alt="shield icon"
+                  src="./assets/reliable-icon.1367510a.svg"
+                  class="service__img"
+                  alt="shield icon"
                   />
                 </div>
                 <div class="text__container">
@@ -173,9 +199,9 @@
               <div class="sect1__service--box">
                 <div class="sect1__img--container">
                   <img
-                    src="./assets/fast-icon.dbb971a7.svg"
-                    class="service__img"
-                    alt="shield icon"
+                  src="./assets/fast-icon.dbb971a7.svg"
+                  class="service__img"
+                  alt="shield icon"
                   />
                 </div>
                 <div class="text__container">
@@ -189,9 +215,9 @@
               <div class="sect1__service--box">
                 <div class="sect1__img--container">
                   <img
-                    src="./assets/simple-icon.673b7e17.svg"
-                    class="service__img"
-                    alt="shield icon"
+                  src="./assets/simple-icon.673b7e17.svg"
+                  class="service__img"
+                  alt="shield icon"
                   />
                 </div>
                 <div class="text__container">
@@ -204,29 +230,31 @@
               </div>
             </div>
           </div>
+          </div>
         </div>
       </section>
-      <section class="sect2">
-        <div class="container">
-          <div class="row">
-            <div class="sect2__container">
-              <div class="sect2__text">
-                <span
+      <div class="sect2__wrapper">
+        <section class="sect2">
+          <div class="container">
+            <div class="row">
+              <div class="sect2__container">
+                <div class="sect2__text">
+                  <span
                   ><h5 class="text-purple sub__title">quality work</h5></span
-                >
-                <h2 class="sect2__title">
-                  Designed & Developed by
-                  <span class="text-purple">Professionals.</span>
-                </h2>
-                <p class="sect2__para">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  cumque aperiam et, sed doloribus impedit ratione, voluptates
-                  dolorum reiciendis, sunt architecto doloremque. Doloribus
-                  repudiandae nesciunt dolores veritatis, dolor maiores.
-                </p>
-                <div class="sect2__link--container">
-                  <a href="" class="sect2__link">Learn More</a>
-                </div>
+                  >
+                  <h2 class="sect2__title">
+                    Designed & Developed by
+                    <span class="text-purple">Professionals.</span>
+                  </h2>
+                  <p class="sect2__para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    cumque aperiam et, sed doloribus impedit ratione, voluptates
+                    dolorum reiciendis, sunt architecto doloremque. Doloribus
+                    repudiandae nesciunt dolores veritatis, dolor maiores.
+                  </p>
+                  <div class="sect2__link--container">
+                    <a href="" class="sect2__link">Learn More</a>
+                  </div>
               </div>
               <div class="sect2__img">
                 <figure>
@@ -237,14 +265,15 @@
           </div>
         </div>
       </section>
+    </div>
       <section class="sect3">
         <div class="sect3__container">
           <div class="row sect3__row">
             <div class="sect3__img--container">
               <img
-                src="./assets/hero-screenshot-2.241aac1f.png"
-                class="sect3__img"
-                alt=""
+              src="./assets/hero-screenshot-2.241aac1f.png"
+              class="sect3__img"
+              alt=""
               />
             </div>
             <div class="sect3__text">
