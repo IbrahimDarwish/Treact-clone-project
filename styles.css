@@ -1033,7 +1033,6 @@ Section 6
   max-width: 100%;
   height: auto;
   display: block;
-  vertical-align: middle;
 }
 .sect6__text {
   padding-left: 64px;
@@ -1390,7 +1389,6 @@ align-items: center;
   max-width: 2rem;
   height: auto;
   display: block;
-  vertical-align: middle;
 }
 .footer__logo--text{
   margin-left: 0.5rem;
