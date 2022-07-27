@@ -543,10 +543,10 @@ Section 3
 */
 
 .sect3__container {
-  margin: 0 154px;
+  margin: 0 auto;
   padding: 96px 0 96px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   max-width: 1280px;
@@ -774,7 +774,7 @@ SECTION 5
 .sect5__row {
   width: 100%;
   max-width: 1280px;
-  margin: 0 154px;
+  margin: 0 auto;
   padding: 96px 0;
   flex-direction: column;
   display: flex;
@@ -1172,7 +1172,7 @@ Section 6
 .sect6__row {
   width: 100%;
   max-width: 1280px;
-  margin: 0 154px;
+  margin: 0 auto;
   padding: 96px 0;
 }
 
@@ -1309,7 +1309,7 @@ SECTION 7
 .sect7__row {
   width: 100%;
   max-width: 1280px;
-  margin: 0 154px;
+  margin: 0 auto;
   padding: 96px 0;
 }
 
